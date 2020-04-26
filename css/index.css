@@ -169,8 +169,7 @@
         font-weight: 900;
         color: #2A2B69;
         font-size: 12vw;
-        position: fixed;
-        margin-left: 33%;
+        position: relative;
         margin-top: 35vh;
 
     }
@@ -179,7 +178,7 @@
         width: 100%;
         height: 136px;
         background-color: #F5F6F6;
-        margin-top: -20vh;
+        margin-top: -30vh;
         z-index: 8;
         position: relative;
         opacity: 0%;
@@ -230,31 +229,13 @@
     }
 
 
-    .map {
-        position: fixed;
-        opacity: 100%;
-        margin-top: -600px;
-        margin-left: -40vw;
-        width: 180vw;
-
-    }
-
-    .map:hover {
-        opacity 100%;
-    }
-
-    map.swipe1 {
-
-        opacity: 100%;
-    }
-
     .webstriker {
         display: none;
     }
 
     .mobilestriker {
         width: 85%;
-        margin-top: 30vh;
+        margin-top: -40vh;
 
     }
     .grid-container {
