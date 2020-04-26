@@ -25,7 +25,11 @@
         top: 50%;
         left: 50%;
         margin-left: -0px;
+<<<<<<< HEAD
         margin-top: -843px;
+=======
+        margin-top: -743px;
+>>>>>>> 8207222eb84fd2a27f253a6022ffd9e3ebb58d34
         border: black;
         z-index: -1;
     }
