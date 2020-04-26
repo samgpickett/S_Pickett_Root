@@ -1,0 +1,246 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>thematchbookproject</title>
+    <link rel="stylesheet" href="css/pages.css" media="screen" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<html>
+<style>
+    .cube {
+        width: 560px;
+        height: 560px;
+        position: fixed;
+        transform-style: preserve-3d;
+        transform: rotateX(-20deg) rotateY(-45deg);
+        top: 50%;
+        left: 50%;
+        margin-left: 80px;
+        margin-top: -293px;
+        border: black;
+    }
+
+    .cube div {
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        background-image: url('../images/matchbox1front.png');
+
+
+    }
+
+    .cube div.top {
+        transform: rotateX(90deg);
+        margin-top: -50px;
+        height: 100px;
+        width: 330px;
+        background-image: url('./images/nendelsinn_oregon_top.png');
+    }
+
+    .cube div.right {
+        transform: rotateY(90deg);
+        margin-left: 280px;
+        width: 100px;
+        height: 430px;
+        background-color: #bb0e2b;
+    }
+
+    .cube div.bottom {
+        transform: rotateX(90deg);
+        margin-top: 380px;
+        height: 100px;
+        width: 330px;
+        background-image: url('./images/nendellsinn_oregon_bottom.png');
+    }
+
+    .cube div.left {
+        transform: rotateY(-90deg);
+        margin-left: -50px;
+        width: 100px;
+        height: 430px;
+        background-color: #bb0e2b;
+    }
+
+    .cube div.front {
+        transform: translateZ(50px);
+        height: 430px;
+        width: 330px;
+        background-image: url('./images/nendelsinn_oregon_front.png');
+
+    }
+
+    .cube div.back {
+        transform: translateZ(-50px);
+        height: 430px;
+        width: 330px;
+        background-image: url('./images/nendelsinn_oregon_back.png');
+    }
+
+</style>
+
+<body>
+    <p class="address1">
+        <spread class="address"> 0313 SW Canyon Rd </spread>97221
+    </p>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+
+        <div id="myLinks">
+            <a href="frontpage.html" id="web">Homepage</a>
+            <a href="burgermiester_california.html" id="web">Burgermister</a>
+            <br>
+            <a href="mayflower_seattle.html" id="web">Mayflower Hotel</a>
+            <br>
+            <a href="hotelmutnomah_organ.html" id="web">Hotel Mutnomah</a>
+            <br>
+            <a href="matchbooknendelsinnoregon.html" id="web">Nendels Cafe</a>
+            <br>
+            <a href="matchbookreliancewashington.html" id="web">Reliance Hotel</a>
+            <br>
+            <a href="match_maryland.html" id="web">Maryland Match</a>
+            <br>
+            <a href="perryhotel_ohio.html" id="web">Perry Hotel</a>
+            <br>
+            <a href="visit_michigan.html" id="web">E Mi Tourist</a>
+            <br>
+            <a href="amelio_california.html" id="web">Amelio Cafe</a>
+            <br>
+            <a href="rowe_michigan.html" id="web">Rowe Hotel</a>
+            <br>
+            <a href="neunavista_california.html" id="web">The Buena Vista</a>
+
+            <a href="americanhotels_newyork.html" id="web" American> Hotels</a>
+            <a href="avanti_colorado.html" id="web">Avanti Foods</a>
+            <br>
+            <a href="carmines_newyork.html" id="web">Carmines Eatery</a>
+            <br>
+            <a href="elcortez_california" id="web">El Cortez Hotel</a>
+            <br>
+            <a href="hodges_michigan.html" id="web">Hodges Dodges</a>
+            <br>
+            <a href="hotel_phili.html" id="web">Stratler Hotel</a>
+            <br>
+            <a href="match_maryland.html" id="web">Match Company</a>
+            <br>
+            <a href="morton_michigan.html" id="web">Morton Hotel</a>
+            <br>
+            <a href="stouggers_newyork.html" id="web">Stouffers Foods</a>
+            <br>
+            <a href="vons_washington.html" id="web">Vons Cafe</a>
+            <a href="frontpage.html" id="grid-itemmm">Homepage</a>
+            <br>
+            <a href="burgermiester_california.html" id="grid-itemmm">California</a>
+            <br>
+            <a href="avanti_colorado.html" id="grid-itemmm" id="a">Colorado</a>
+            <br>
+            <a href="match_maryland.html" id="grid-itemmm" id="a">Maryland</a>
+
+            <br>
+            <a href="morton_michigan.html" id="grid-itemmm" id="a">Michigan</a>
+            <br>
+            <a href="carmines_newyork.html" id="grid-itemmm" id="a">New York</a>
+            <br>
+            <a href="perryhotel_ohio.html" id="grid-itemmm" id="a">Ohio</a>
+            <br>
+
+            <a href="matchbooknendelsinnoregon.html" id="grid-itemmm" id="a">Oregon</a>
+            <br>
+            <a href="hotel_phili.html" id="grid-itemmm" id="a">Pennsylvania</a>
+            <br>
+
+            <a href="vons_washington.html" id="grid-itemmm" id="a">Washington</a>
+
+        </div>
+
+    <a class="icon" onclick="myFunction()">
+        <img id="navstick2" class="navstick2" src="images/navigationmatchstick.png" width="60vw">
+
+        <img id="navstick1" class="navstick1" src="images/navigationmatchstick.png" width="60vw">
+    </a>
+    </div>
+    </div>
+
+    <div style="padding-left:16px">
+
+        <h1>Nendel's Inn</h1>
+
+        <h2>
+            <div class="subhead">This fancy little restaurant was owned by Bob Harrington and his wife Nancy. </div> <br>From personal records of employees it appears that the kithen has a number of different head chefs. In spite of this rotation Nendel was infamous for their delcious menu. Nendel's must have closed down in the 1970's because I can find no information about the restaurant past that point. Legend has it that the food is still talked about in 'Stump Town' to this very day.
+            <div class="subhead">Colors:</div>
+            <div class="colors">
+                <div style="background-image: url(images/nendellsinn_oregon_bottom.png); background-size: 300px;background-position:center bottom;" class="square"></div>
+                <div style="background-image: url(images/nendelsinn_oregon_back.png); background-size: 300px; background-position:center top;" class="square"></div>
+                <div style="background-image: url(images/nendelsinn_oregon_top.png); background-size: 400px; background-position:center bottom;
+ " class="square"></div>
+        </h2>
+
+        <div class="cube">
+            <div class="top"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="back"></div>
+            <div class="front"></div>
+        </div>
+        <h3>MATCHBOOK</h3>
+
+        <h4>Updated April 1, 2020 I Samantha Pickett </h4>
+
+
+
+        <center>
+            <h5>Oregon</h5>
+            <img class="matchbook" src="images/nendelsinn_oregon_front.png">
+            <h6>0313 Southwest Canyon Road, Portland, OR, 97221</h6>
+            <h5></h5>
+            <img class="matchbook" src="images/hotelmutnomah_portland_front.png">
+            <h6>319 SW Pine St, Portland, OR 97204</h6>
+
+        </center>
+        <script>
+            $(function() {
+                $(window).mousemove(function(e) {
+                    $('.cube').css('transform', 'rotateX(' + -e.pageY + 'deg)' + 'rotateY(' + e.pageX + 'deg)');
+                });
+            })
+
+            function myFunction() {
+
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                var y = document.getElementById("navstick1")
+                console.log(y);
+                if (y.classList.contains("navstick1")) {
+                    y.classList.remove("navstick1")
+                    y.classList.add("navstick1c")
+                } else {
+                    y.classList.add("navstick1")
+                    y.classList.remove("navstick1c")
+                }
+
+                var z = document.getElementById("navstick2")
+                console.log(z);
+                if (z.classList.contains("navstick2")) {
+                    z.classList.remove("navstick2")
+                    z.classList.add("navstick2c")
+                } else {
+                    z.classList.add("navstick2")
+                    z.classList.remove("navstick2c")
+                }
+
+
+
+
+            }
+
+        </script>
+
+</body>
+
+</html>

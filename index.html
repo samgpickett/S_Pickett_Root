@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<!--  code by Matthew Raupp instagram @raupp2112  -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>thematchbookproject</title>
+    <link rel="stylesheet" href="css/index.css" media="screen" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>swipe demo</title>
+<!--    <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">-->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+
+
+
+
+    <center>
+
+        <div class="happy">MATCHBOOK</div>
+        <p class="strike">strike</p>
+
+        <img class="mobilestriker" src="images/matchbook-mobile.svg">
+        <img class="webstriker" src="images/matchbook-desktop.svg">
+        <div class="box">
+             <iframe id="home" class="box" src="frontpage.html"></iframe>
+            </div>
+       
+
+        </div>
+        
+
+
+    </center>
+
+
+
+    <script>
+        $(function() {
+            $("div.box").on("swipe", swipeHandler);
+            
+
+
+            // Callback function references the event target and adds the 'swipe' class to it
+            function swipeHandler(event) {
+                $(event.target).addClass("swipe");
+
+            }
+        });
+//                $(function() {
+//            $("iframe.box").on("swipe", swipeHandler);
+//            
+//
+//
+//            // Callback function references the event target and adds the 'swipe' class to it
+//            function swipeHandler(event) {
+//                $(event.target).addClass("swipee");
+//
+//            }
+//        });
+        
+    </script></html>
+

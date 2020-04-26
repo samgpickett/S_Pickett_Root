@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<!--  code by Matthew Raupp instagram @raupp2112  -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>thematchbookproject</title>
+    <link rel="stylesheet" href="css/vons_washington.css" media="screen" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/pages.css" media="screen" charset="utf-8">
+    
+</head>
+<style>
+  
+
+.cube {
+    width: 560px;
+    height: 560px;
+    position: fixed;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -293px;
+}
+
+.cube div {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+
+
+}
+
+.cube div.top {
+    transform: rotateX(90deg);
+    margin-top: -50px;
+    height: 100px;
+    width: 445px;
+    background-image: url('images/perryhotel_ohio_top.png');
+}
+
+.cube div.right {
+    transform: rotateY(90deg);
+    margin-left: 395px;
+    width: 100px;
+    height: 550px;
+    background-color: #4b3724;
+}
+
+.cube div.bottom {
+    transform: rotateX(90deg);
+    margin-top: 500px;
+    height: 100px;
+    width: 445px;
+    background-image: url('images/generic_stricker.png');
+}
+
+.cube div.left {
+    transform: rotateY(-90deg);
+    margin-left: -50px;
+    width: 100px;
+    height: 550px;
+    background-color: #4b3724;
+}
+
+.cube div.front {
+    transform: translateZ(50px);
+    height: 550px;
+    width: 445px;
+    background-image: url('images/perryhotel_ohio_front.png');
+}
+
+.cube div.back {
+    transform: translateZ(-50px);
+    height: 550px;
+    width: 445px;
+     background-image: url('images/perryhotel_ohio_back.png');
+}
+  
+</style>
+
+<body>
+            <!-- Top Navigation Menu -->
+    <div class="topnav">
+
+        <div id="myLinks">
+            <a href="frontpage.html" id="web">Homepage</a>
+            <a href="burgermiester_california.html" id="web">Burgermister</a>
+            <br>
+            <a href="mayflower_seattle.html" id="web">Mayflower Hotel</a>
+            <br>
+            <a href="hotelmutnomah_organ.html" id="web">Hotel Mutnomah</a>
+            <br>
+            <a href="matchbooknendelsinnoregon.html" id="web">Nendels Cafe</a>
+            <br>
+            <a href="matchbookreliancewashington.html" id="web">Reliance Hotel</a>
+            <br>
+            <a href="match_maryland.html" id="web">Maryland Match</a>
+            <br>
+            <a href="perryhotel_ohio.html" id="web">Perry Hotel</a>
+            <br>
+            <a href="visit_michigan.html" id="web">E Mi Tourist</a>
+            <br>
+            <a href="amelio_california.html" id="web">Amelio Cafe</a>
+            <br>
+            <a href="rowe_michigan.html" id="web">Rowe Hotel</a>
+            <br>
+            <a href="neunavista_california.html" id="web">The Buena Vista</a>
+
+            <a href="americanhotels_newyork.html" id="web" American> American Hotels</a>
+            <a href="avanti_colorado.html" id="web">Avanti Foods</a>
+            <br>
+            <a href="carmines_newyork.html" id="web">Carmines Eatery</a>
+            <br>
+            <a href="elcortez_california" id="web">El Cortez Hotel</a>
+            <br>
+            <a href="hodges_michigan.html" id="web">Hodges Dodges</a>
+            <br>
+            <a href="hotel_phili.html" id="web">Stratler Hotel</a>
+            <br>
+            <a href="morton_michigan.html" id="web">Morton Hotel</a>
+            <br>
+            <a href="stouggers_newyork.html" id="web">Stouffers Foods</a>
+            <br>
+            <a href="vons_washington.html" id="web">Vons Cafe</a>
+            <a href="frontpage.html" id="grid-itemmm">Homepage</a>
+            <br>
+            <a href="burgermiester_california.html" id="grid-itemmm">California</a>
+            <br>
+            <a href="avanti_colorado.html" id="grid-itemmm" id="a">Colorado</a>
+            <br>
+            <a href="match_maryland.html" id="grid-itemmm" id="a">Maryland</a>
+
+            <br>
+            <a href="morton_michigan.html" id="grid-itemmm" id="a">Michigan</a>
+            <br>
+            <a href="carmines_newyork.html" id="grid-itemmm" id="a">New York</a>
+            <br>
+            <a href="perryhotel_ohio.html" id="grid-itemmm" id="a">Ohio</a>
+            <br>
+
+            <a href="matchbooknendelsinnoregon.html" id="grid-itemmm" id="a">Oregon</a>
+            <br>
+            <a href="hotel_phili.html" id="grid-itemmm" id="a">Pennsylvania</a>
+            <br>
+
+            <a href="vons_washington.html" id="grid-itemmm" id="a">Washington</a>
+
+        </div>
+         <a class="icon" onclick="myFunction()">
+            <img id="navstick2" class="navstick2" src="images/navigationmatchstick.png" width="60vw">
+
+            <img id="navstick1" class="navstick1" src="images/navigationmatchstick.png" width="60vw">
+        </a>
+        </div>
+
+        <div style="padding-left:16px">
+
+    <h1>Commdore Perry</h1>
+
+            <h2><div class="subhead">The Commodore Perry hotel opened in 1927.</div> <br> It was supposed to bring manufacturing jobs to the town, because out of town executives would finally have a place to stay. It was a raging success. In 1934 it was sold for $3 million and the name was changed to the Commodore Perry Hotel Co. The success didn't last for long however, around the 1950s the hotel began it's slow dissent into forclosure. From 1974 to 1980, the hotel lost $1.8 million, and in 1980 it closed. Recently the hotel has been renovated and reopened as an apartment building. <div class="subhead">Colors:</div> 
+    <div class="colors">
+     <div style="background-image: url(images/perryhotel_ohio_top.png); background-size: 550px;background-position:center bottom;" class="square"></div>
+    <div style="background-image: url(images/perryhotel_ohio_back.png); background-size: 550px; background-position:center;" class="square"></div>
+    <div style="background-image: url(images/perryhotel_ohio_front.png); background-size: 400px; background-position:center;
+ "class="square"></div>
+    </h2>
+            <left>
+            <p class="address1"> 505 Jefferson Ave 43604 </p>
+            </left>
+
+<div class="cube">
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+  <div class="back"></div>
+  <div class="front"></div>
+</div>
+    
+    <h3>MATCHBOOK</h3>
+
+    <h4>Updated April 1, 2020 I Samantha Pickett </h4>
+            <center>
+                <h5>Ohio</h5>
+                <img class="matchbook" src="images/perryhotel_ohio_front.png">
+                <h6>505 Jefferson Ave , Toledo, OH 43604</h6>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="matchbook" src="images/stouffers_newyork_front.png">
+                <h6>22000 E 9th St, Cleveland, OH 44115 </h6>
+
+
+
+
+            </center>
+
+
+    
+    </body>
+    <script>
+            $(function() {
+                $(window).mousemove(function(e) {
+                    $('.cube').css('transform', 'rotateX(' + -e.pageY + 'deg)' + 'rotateY(' + e.pageX + 'deg)');
+                });
+            })
+
+            function myFunction() {
+
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                var y = document.getElementById("navstick1")
+                console.log(y);
+                if (y.classList.contains("navstick1")) {
+                    y.classList.remove("navstick1")
+                    y.classList.add("navstick1c")
+                } else {
+                    y.classList.add("navstick1")
+                    y.classList.remove("navstick1c")
+                }
+                
+                var z = document.getElementById("navstick2")
+                console.log(z);
+                if (z.classList.contains("navstick2")) {
+                    z.classList.remove("navstick2")
+                    z.classList.add("navstick2c")
+                } else {
+                    z.classList.add("navstick2")
+                    z.classList.remove("navstick2c")
+                }
+                
+                
+                
+
+            }
+    </script>
