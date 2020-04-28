@@ -114,15 +114,13 @@
         font-size: 30px;
         text-align: center;
         width: 10vw;
-        cursor: url(https://i.gifer.com/origin/18/1881d8691bd9ff18bea62c0a275e1da6_w200.gif);
-
+        position: relative;
     }
 
-    img:hover {
-
-        box-shadow: 0px 0px 20px 0px rgb(245, 246, 246, 0.13);
+   .grid-item: hover{
+        box-shadow: 0px 0px 20px 0px rgb(245, 246, 246, 1);
         transition: 1s;
-
+        position: relative;
 
     }
   .grid-containerm {
@@ -234,6 +232,7 @@
     }
     .grid-container {
         display: none;
+        position: relative;
     }
     
     .grid-containerm {
@@ -241,11 +240,11 @@
         grid-template-columns: auto;
         margin-top: 60px;
         width: 80%;
-
-
+        position: relative;
     }
     .grid-itemm {
         padding-bottom: 20px;
+                position: relative;
     }
 
 }
